@@ -14,6 +14,6 @@ function clasificaElementos(index) {
         };
     };
 
-    return [(Npositivos.length/Array.length).toFixed(4),(Nnegativos.length/Array.length).toFixed(4),(Nzero.length/Array.length).toFixed(4)];
+    return [(Npositivos.length/index.length).toFixed(4),(Nnegativos.length/index.length).toFixed(4),(Nzero.length/index.length).toFixed(4)];
 }
 module.exports = clasificaElementos;
