@@ -25,22 +25,4 @@ Números igual a 0 = 0
 Resultado: [(Npositivios/Array.size), (Nnegativos/Array.size), (Nzero/Array.size)]
 */
 
-let Array = [19, 1, 1986, -5, 0, 0, 7];
-let Resultado = [];
 
-let Npositivos = [];
-let Nnegativos = [];
-let Nzero = [];
-
-for(let i of Array){
-    if(i > 0){ 
-        Npositivos.push(i);
-    } else if (i == 0) {
-        Nzero.push(i);
-    } else if (i < 0) {
-        Nnegativos.push(i);
-    };
-};
-
-Resultado.push((Npositivos.length/Array.length).toFixed(4),(Nnegativos.length/Array.length).toFixed(4),(Nzero.length/Array.length).toFixed(4));
-console.log(Resultado);
